@@ -1,13 +1,4 @@
-"""
-6.1010 Spring '23 Lab 3: Bacon Number
-"""
-
-#!/usr/bin/env python3
-
 import pickle
-
-# NO ADDITIONAL IMPORTS ALLOWED!
-
 
 def check_dic(dic, key, value):
     """
@@ -240,21 +231,11 @@ if __name__ == "__main__":
         large = pickle.load(f)
     with open("resources/movies.pickle", "rb") as f:
         movies_list = pickle.load(f)
-    # additional code here will be run only when lab.py is invoked directly
-    # (not when imported from test.py), so this is a good place to put code
-    # used, for example, to generate the results for the online questions.
-    db_large = transform_data(large)
-    # print(names)
-    # print(names["Alexandra Artrip"])
-    # index = list(names.values()).index(34721)
-    # print(list(names.keys())[index])
-    print(tiny)
-    print()
+
+    #example usage
     data = transform_data(tiny)
     print(data)
     print(actors_connecting_films(data, 617, 74881))
-    # print("result")
-    #print(actors_with_bacon_number_general(data, 1532, 1))
 
     #MOVIE PATHS
     # largedb = transform_data(large)
@@ -263,7 +244,6 @@ if __name__ == "__main__":
     # for i in path:
     #     index = list(movies_list.values()).index(i)
     #     print(list(movies_list.keys())[index])
-
 
     #BACON PATH
     # largedb = transform_data(large)
